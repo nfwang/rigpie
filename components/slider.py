@@ -8,10 +8,9 @@ from rigpie.pylib.rmath import Transform, Vector
 
 import rigpie.pylib.curve as curve_pylib
 import rigpie.pylib.skincluster as skincluster_pylib
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.mayatransform as mayatransform_pylib
-import rigpie.pylib.shape as shape_pylib
 
 
 class Slider(Component):
@@ -240,7 +239,7 @@ class Slider(Component):
             slider_transform_name.category = "Ctrl"
 
             self.control = Control( name=slider_transform_name,
-                                    color=shape_pylib.getColorBySide(str(slider_transform_name)), 
+                                    color=controlshape_pylib.getColorBySide(str(slider_transform_name)), 
                                     size=2,
                                     shapeType="cube",
                                     depth=2,

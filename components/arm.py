@@ -7,7 +7,7 @@ from rigpie.components.limb import TwoSegmentLimb
 from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.control import Control
 import rigpie.pylib.attribute as attribute
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.constraints as constraints
 import rigpie.pylib.xform as xform
 import rigpie.pylib.rig as rig
@@ -107,7 +107,7 @@ class Arm(TwoSegmentLimb):
             self.clavicle_control = Control( name=clavicle_control_name, 
                                              size=5, 
                                              shapeRotation=self.clavShapeRot, 
-                                             color=shape_pylib.getColorBySide(self.clavicleJoint), 
+                                             color=controlshape_pylib.getColorBySide(self.clavicleJoint), 
                                              depth=2,
                                              shapeType="turtle", 
                                              matrix=self.clavicleJoint, 

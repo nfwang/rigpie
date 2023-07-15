@@ -9,7 +9,7 @@ from rigpie.pylib.mayaname import MayaName
 import rigpie.pylib.rig as rig
 import rigpie.pylib.attribute as attribute
 import rigpie.pylib.xform as xform_pylib
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.constraints as constraints_pylib
 import rigpie.pylib.skincluster as skincluster_pylib
 
@@ -59,7 +59,7 @@ class Spine(SplineCurve):
             ctrl_name.descriptor = ctrl_name.descriptor + "Gimbal"
 
             spine_top_gimbal = Control( name=ctrl_name,
-                                        color=shape_pylib.getColorBySide(top_spine_ctrl), 
+                                        color=controlshape_pylib.getColorBySide(top_spine_ctrl), 
                                         size=5, 
                                         shapeType="cube",
                                         depth=0,

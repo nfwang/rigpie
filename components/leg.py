@@ -7,7 +7,7 @@ from rigpie.pylib.control import Control
 
 import rigpie.pylib.rig as rig
 import rigpie.pylib.attribute as attribute
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlcontrolshape_pylib
 import rigpie.pylib.constraints as constraints
 
 class Leg(TwoSegmentLimb):
@@ -104,7 +104,7 @@ class Leg(TwoSegmentLimb):
                                 size=5, 
                                 shapeRotation=[0,0,90],
                                 shapeType="circle", 
-                                color=shape_pylib.getColorBySide(self.startJoint), 
+                                color=controlshape_pylib.getColorBySide(self.startJoint), 
                                 lockAndHide=["t","s","v"],
                                 rotationOrder="zxy",
                                 matrix=self.ballJoint, 
@@ -165,7 +165,7 @@ class Leg(TwoSegmentLimb):
         self.bank_out_pivot = Control( name=ik_pivot_name, 
                                        size=3,
                                        shapeRotation=[90, 0, 90], 
-                                       color=shape_pylib.getColorBySide(self.startJoint), 
+                                       color=controlshape_pylib.getColorBySide(self.startJoint), 
                                        shapeType="circle", 
                                        lockAndHide=["t","s","v"], 
                                        matrix=self.bankOutJoint, 
@@ -180,7 +180,7 @@ class Leg(TwoSegmentLimb):
         self.bank_in_pivot = Control( name=ik_pivot_name, 
                                       size=3,
                                       shapeRotation=[90, 0, 90], 
-                                      color=shape_pylib.getColorBySide(self.startJoint), 
+                                      color=controlshape_pylib.getColorBySide(self.startJoint), 
                                       shapeType="circle", 
                                       lockAndHide=["t","s","v"], 
                                       matrix=self.bankInJoint, 
@@ -194,7 +194,7 @@ class Leg(TwoSegmentLimb):
         self.toe_pivot = Control( name=ik_pivot_name, 
                                   size=3,
                                   shapeRotation=[0, 0, 90], 
-                                  color=shape_pylib.getColorBySide(self.startJoint), 
+                                  color=controlshape_pylib.getColorBySide(self.startJoint), 
                                   shapeType="circle", 
                                   lockAndHide=["t","s","v"], 
                                   matrix=self.toeJoint, 
@@ -209,7 +209,7 @@ class Leg(TwoSegmentLimb):
         self.heel_pivot = Control( name=ik_pivot_name, 
                                    size=3,
                                    shapeRotation=[0, 0, 90], 
-                                   color=shape_pylib.getColorBySide(self.startJoint), 
+                                   color=controlshape_pylib.getColorBySide(self.startJoint), 
                                    shapeType="circle", 
                                    lockAndHide=["t","s","v"], 
                                    matrix=self.heelJoint, 
@@ -223,7 +223,7 @@ class Leg(TwoSegmentLimb):
         self.ball_pivot = Control( name=ik_pivot_name, 
                                    size=5,
                                    shapeRotation=[0, 0, 90], 
-                                   color=shape_pylib.getColorBySide(self.startJoint), 
+                                   color=controlshape_pylib.getColorBySide(self.startJoint), 
                                    shapeType="circle", 
                                    lockAndHide=["t","s","v"], 
                                    matrix=self.ballJoint, 
@@ -237,7 +237,7 @@ class Leg(TwoSegmentLimb):
         self.toe_ik = Control( name=ik_pivot_name, 
                                size=3,
                                shapeRotation=[0, 0, 90],
-                               color=shape_pylib.getColorBySide(self.startJoint), 
+                               color=controlshape_pylib.getColorBySide(self.startJoint), 
                                shapeType="turtle", 
                                lockAndHide=["t","s","v"], 
                                matrix=self.ballJoint,

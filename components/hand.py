@@ -6,7 +6,7 @@ from rigpie.pylib.component import Component
 from rigpie.pylib.control import Control
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape_pylib as controlshape_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.rig as rig_pylib
 import rigpie.pylib.rmath as rmath_pylib
@@ -97,7 +97,7 @@ class Hand(Component):
                                 size=1, 
                                 shapeRotation=[0,0,90], 
                                 shapeType="cube", 
-                                color=shape_pylib.getColorBySide(finger_joint), 
+                                color=controlshape_pylib.getColorBySide(finger_joint), 
                                 lockAndHide=["t","s","v"], 
                                 matrix=finger_joint, 
                                 inputJoint=finger_joint,
@@ -125,7 +125,7 @@ class Hand(Component):
                                 size=1, 
                                 shapeRotation=[0,0,90],
                                 shapeType="cube", 
-                                color=shape_pylib.getColorBySide(str(joint_name)), 
+                                color=controlshape_pylib.getColorBySide(str(joint_name)), 
                                 matrix=str(joint_name), 
                                 lockAndHide=["t","s","v"], 
                                 inputJoint=str(joint_name),
@@ -170,7 +170,7 @@ class Hand(Component):
                                 size=1, 
                                 shapeRotation=[0,0,90], 
                                 shapeType="cube", 
-                                color=shape_pylib.getColorBySide(self.thumbJoint), 
+                                color=controlshape_pylib.getColorBySide(self.thumbJoint), 
                                 matrix=str(joint_name), 
                                 lockAndHide=["t","s","v"], 
                                 inputJoint=str(joint_name),

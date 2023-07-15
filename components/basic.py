@@ -6,7 +6,7 @@ from rigpie.pylib.component import Component
 from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.control import Control
 
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 
 class Basic(Component):
     ''' A basic one joint control component '''
@@ -54,7 +54,7 @@ class Basic(Component):
             self.rotationOrder = self.joint 
             
         if self.controlColor == None:
-            self.controlColor = shape_pylib.getColorBySide(str(name))
+            self.controlColor = controlshape_pylib.getColorBySide(str(name))
 
         self.control = Control( name=name, 
                                 size=self.size, 
@@ -83,7 +83,7 @@ class Basic(Component):
                 offset_control = Control( name=name, 
                                           size=self.size, 
                                           shapeRotation=[0,0,90],
-                                          color=shape_pylib.getColorBySide(str(name)), 
+                                          color=controlshape_pylib.getColorBySide(str(name)), 
                                           thickness=self.thickness,
                                           shapeType=self.shapeType, 
                                           lockAndHide=self.lockAndHide, 
@@ -107,7 +107,7 @@ class Basic(Component):
                 offset_control = Control( name=name, 
                                           size=self.size / (count + 1), 
                                           shapeRotation=[0,0,90],
-                                          color=shape_pylib.getColorBySide(str(name)), 
+                                          color=controlshape_pylib.getColorBySide(str(name)), 
                                           thickness=self.thickness,
                                           shapeType=self.shapeType, 
                                           lockAndHide=self.lockAndHide, 

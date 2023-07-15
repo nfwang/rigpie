@@ -10,7 +10,7 @@ import rigpie.pylib.constraints as constraints_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.rig as rig_pylib
 import rigpie.pylib.rmath as rmath_pylib
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.joint as joint_pylib
 import rigpie.pylib.xform as xform_pylib
 import rigpie.pylib.curve as curve_pylib
@@ -173,7 +173,7 @@ class SplineCurve(Component):
             up_axis = "z"
             
         if not self.controlColor:
-            self.controlColor = shape_pylib.getColorBySide(self.name)
+            self.controlColor = controlshape_pylib.getColorBySide(self.name)
 
         thickness = 1
         if self.tweakSpacing:

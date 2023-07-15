@@ -10,7 +10,7 @@ from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.control import Control
 from rigpie.pylib.rmath import Transform
 
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.xform as xform
 import rigpie.pylib.attribute as attribute
 
@@ -60,7 +60,7 @@ class Head(Component):
         
         self.head_gimbal_control = Control( name=head_gimbal_control_name,
                                     size=5, 
-                                    color=shape_pylib.getColorBySide(self.headJoint), 
+                                    color=controlshape_pylib.getColorBySide(self.headJoint), 
                                     shapeType='cube', 
                                     lockAndHide=['s','v'], 
                                     depth=0,
@@ -104,7 +104,7 @@ class Head(Component):
             
             # fk
             eye_fk_control = Control( name=eye_fk_control_name, 
-                                      color=shape_pylib.getColorBySide(eye_joint), 
+                                      color=controlshape_pylib.getColorBySide(eye_joint), 
                                       shapeType='sphere', 
                                       lockAndHide=['s','v'], 
                                       shapeRotation=[0,0,90], 
@@ -126,7 +126,7 @@ class Head(Component):
             
             aim_control = Control( name=eye_fk_control_name, 
                                    size=.5, 
-                                   color=shape_pylib.getColorBySide(eye_joint), 
+                                   color=controlshape_pylib.getColorBySide(eye_joint), 
                                    shapeType='circle', 
                                    lockAndHide=['r','s','v'], 
                                    shapeRotation=[90,0,0],

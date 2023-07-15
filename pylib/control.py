@@ -5,9 +5,9 @@ from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.rmath import Transform
 
 import maya.cmds as cmds
-import rigpie.pylib.shape     as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.attribute as attribute_pylib
-import rigpie.pylib.xform     as xform_pylib
+import rigpie.pylib.xform as xform_pylib
 
 class Control(object):
     ''' Control object '''
@@ -137,7 +137,7 @@ class Control(object):
         if self.shapeType == None:
             control = cmds.createNode("transform", n=shape_name)
         else:
-            control = shape_pylib.create(shapeType=self.shapeType, type=self.type, size=self.size, name=shape_name, color=self.color, rot=self.shapeRotation, thickness=self.thickness)
+            control = controlshape_pylib.create(shapeType=self.shapeType, type=self.type, size=self.size, name=shape_name, color=self.color, rot=self.shapeRotation, thickness=self.thickness)
 
         # Create Nulls and Zero grps
         zero = ""
@@ -484,9 +484,9 @@ def mirrorShapes(controls, shapefile=True, searchreplace=["Lf","Rt"], useExistin
             
             cmds.setAttr(target_control+"Shape.overrideColor", color)
         else:
-            color = shape_pylib.getColorBySide(target_control)
+            color = controlshape_pylib.getColorBySide(target_control)
             
-            cmds.setAttr(target_control+"Shape.overrideColor", shape_pylib.getMayaColor(color))
+            cmds.setAttr(target_control+"Shape.overrideColor", controlshape_pylib.getMayaColor(color))
         
         # thickness
         cmds.setAttr(target_control+"Shape.lineWidth", cmds.getAttr(ctrl+"Shape.lineWidth"))

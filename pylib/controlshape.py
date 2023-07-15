@@ -5,7 +5,6 @@ import maya.api.OpenMaya as om
 
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.shape as shape_pylib
 import rigpie.pylib.rmath as rmath_pylib
 import rigpie.pylib.xform as xform_pylib
 
@@ -57,7 +56,7 @@ def getMayaColor(color):
         try:
             return(colors.index(color))
         except ValueError:
-            print ("shape_pylib.getColor(): %s not found in color dictionary\n" % color)
+            print ("controlshape_pylib.getColor(): %s not found in color dictionary\n" % color)
             return False
 
 
@@ -216,7 +215,7 @@ def rotatePointArray(parray, rot):
     cmds.delete(tmpxform)
     return tuple(newpointary)
 
-def changeControlShape(ctrl, shapeType="cube", color="yellow"):
+def changeShape(ctrl, shapeType="cube", color="yellow"):
     original_shape = cmds.listRelatives(ctrl, shapes=True)[0]
     
     cmds.delete(original_shape)

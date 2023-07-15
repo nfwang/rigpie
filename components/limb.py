@@ -8,7 +8,7 @@ from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.control import Control
 from rigpie.pylib.rmath import Transform, Vector
 
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.constraints as constraints_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.xform as xform_pylib
@@ -308,7 +308,7 @@ class Limb(Component):
         start_up_vector_transform.translate(bender_up_vector * upVectorUnits)
         start_up_vector_transform = start_up_vector_transform * start_joint_transform
         
-        rgb = shape_pylib.getRgbBySide(self.startJoint, alternate=True)
+        rgb = controlshape_pylib.getRgbBySide(self.startJoint, alternate=True)
         start_up_vector = Control( name=up_vector_name, 
                                    size=2, 
                                    shapeRotation=[90, 0, 0],
@@ -486,7 +486,7 @@ class ThreeSegmentLimb(Limb):
         
             self.fk_offset = Control( name=str(ctrl_name), 
                                       size=5, 
-                                      color=shape_pylib.getColorBySide(self.startJoint), 
+                                      color=controlshape_pylib.getColorBySide(self.startJoint), 
                                       shapeType="sphere", 
                                       lockAndHide=["t","s","v"], 
                                       depth=2,
@@ -505,7 +505,7 @@ class ThreeSegmentLimb(Limb):
         self.start_fk = Control( name=str(ctrl_name), 
                                  size=5, 
                                  shapeRotation=[0,0,90], 
-                                 color=shape_pylib.getColorBySide(self.startJoint),
+                                 color=controlshape_pylib.getColorBySide(self.startJoint),
                                  shapeType="cube", 
                                  lockAndHide=["t","s","v"], 
                                  matrix=self.startJoint, 
@@ -521,7 +521,7 @@ class ThreeSegmentLimb(Limb):
         self.mid_fk = Control( name=str(ctrl_name), 
                                size=5, 
                                shapeRotation=[0,0,90], 
-                               color=shape_pylib.getColorBySide(self.midJoint), 
+                               color=controlshape_pylib.getColorBySide(self.midJoint), 
                                shapeType="cube", 
                                lockAndHide=["t","s","v"], 
                                matrix=self.midJoint, 
@@ -536,7 +536,7 @@ class ThreeSegmentLimb(Limb):
         self.hockFK = Control( name=str(ctrl_name), 
                                size=5, 
                                shapeRotation=[0,0,90], 
-                               color=shape_pylib.getColorBySide(self.hockJoint), 
+                               color=controlshape_pylib.getColorBySide(self.hockJoint), 
                                shapeType="cube", 
                                lockAndHide=["t","s","v"], 
                                matrix=self.hockJoint, 
@@ -551,7 +551,7 @@ class ThreeSegmentLimb(Limb):
         self.ankleFK = Control( name=str(ctrl_name), 
                                 size=5, 
                                 shapeRotation=[0,0,90], 
-                                color=shape_pylib.getColorBySide(self.ankleJoint), 
+                                color=controlshape_pylib.getColorBySide(self.ankleJoint), 
                                 shapeType="cube", 
                                 lockAndHide=["t","s","v"], 
                                 matrix=self.ankleJoint, 
@@ -583,7 +583,7 @@ class ThreeSegmentLimb(Limb):
 
         self.startIkOffset = Control( name=str(ctrl_name),
                                       size=5,
-                                      color=shape_pylib.getColorBySide(self.startJoint),
+                                      color=controlshape_pylib.getColorBySide(self.startJoint),
                                       shapeType="sphere",
                                       lockAndHide=["s","v"],
                                       matrix=self.startJoint,
@@ -603,7 +603,7 @@ class ThreeSegmentLimb(Limb):
         self.ik = Control( name=str(ctrl_name),
                            size=5, 
                            shapeRotation=[0,0,90],
-                           color=shape_pylib.getColorBySide(self.ankleJoint),
+                           color=controlshape_pylib.getColorBySide(self.ankleJoint),
                            thickness=3,
                            shapeType="cube",
                            lockAndHide=["s","v"],
@@ -622,7 +622,7 @@ class ThreeSegmentLimb(Limb):
         self.ik_end = Control( name=str(ctrl_name),
                                size=3, 
                                shapeRotation=[0,0,90],
-                               color=shape_pylib.getColorBySide(self.endJoint),
+                               color=controlshape_pylib.getColorBySide(self.endJoint),
                                thickness=1,
                                shapeType="sphere",
                                lockAndHide=["s","v"],
@@ -659,7 +659,7 @@ class ThreeSegmentLimb(Limb):
         self.pivot_ik = Control( name=str(ctrl_name), 
                                 size=1, 
                                 shapeRotation=[0,0,0], 
-                                color=shape_pylib.getColorBySide(self.midJoint), 
+                                color=controlshape_pylib.getColorBySide(self.midJoint), 
                                 shapeType=self.pivot_ikShape, 
                                 lockAndHide=["r","s","v"], 
                                 matrix=pv_transform, 
@@ -871,7 +871,7 @@ class TwoSegmentLimb(Limb):
             ctrl_name.descriptor = ctrl_name.descriptor+"OffsetFk"
         
             self.fk_offset = Control( name=str(ctrl_name), 
-                                          color=shape_pylib.getColorBySide(self.startJoint), 
+                                          color=controlshape_pylib.getColorBySide(self.startJoint), 
                                           size=5, 
                                           shapeType="sphere", 
                                           depth=2,
@@ -887,7 +887,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.descriptor = ctrl_name.descriptor + "Fk"
         ctrl_name.category = "Ctrl"
         self.start_fk = Control( name=str(ctrl_name), 
-                                color=shape_pylib.getColorBySide(self.startJoint), 
+                                color=controlshape_pylib.getColorBySide(self.startJoint), 
                                 size=5, 
                                 shapeType="cube", 
                                 lockAndHide=["t","s","v"], 
@@ -905,7 +905,7 @@ class TwoSegmentLimb(Limb):
             ctrl_name.descriptor = ctrl_name.descriptor + "FkGimbal"
             ctrl_name.category = "Ctrl"
             self.start_fk_gimbal = Control( name=str(ctrl_name), 
-                                          color=shape_pylib.getColorBySide(self.startJoint), 
+                                          color=controlshape_pylib.getColorBySide(self.startJoint), 
                                           size=5, 
                                           shapeType="sphere", 
                                           lockAndHide=["t","s","v"], 
@@ -924,7 +924,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.descriptor = ctrl_name.descriptor + "Fk"
         ctrl_name.category = "Ctrl"
         self.mid_fk = Control( name=str(ctrl_name), 
-                              color=shape_pylib.getColorBySide(self.midJoint), 
+                              color=controlshape_pylib.getColorBySide(self.midJoint), 
                               size=5, 
                               shapeType="cube", 
                               lockAndHide=["t","s","v"], 
@@ -938,7 +938,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.descriptor = ctrl_name.descriptor + "Fk"
         ctrl_name.category = "Ctrl"
         self.end_fk = Control( name=str(ctrl_name), 
-                              color=shape_pylib.getColorBySide(self.endJoint), 
+                              color=controlshape_pylib.getColorBySide(self.endJoint), 
                               size=5, shapeType="cube", 
                               lockAndHide=["t","s","v"], 
                               parent=self.mid_fk.name, 
@@ -955,7 +955,7 @@ class TwoSegmentLimb(Limb):
             ctrl_name.descriptor = ctrl_name.descriptor + "FkGimbal"
             ctrl_name.category = "Ctrl"
             self.end_fk_gimbal = Control( name=str(ctrl_name), 
-                                        color=shape_pylib.getColorBySide(self.endJoint), 
+                                        color=controlshape_pylib.getColorBySide(self.endJoint), 
                                         size=5, 
                                         shapeType="sphere", 
                                         lockAndHide=["t","s","v"], 
@@ -1046,7 +1046,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.category = "Ctrl"
         
         self.ik = Control( name=str(ctrl_name), 
-                           color=shape_pylib.getColorBySide(self.startJoint), 
+                           color=controlshape_pylib.getColorBySide(self.startJoint), 
                            size=5, 
                            shapeType="cube", 
                            lockAndHide=["s","v"],
@@ -1067,7 +1067,7 @@ class TwoSegmentLimb(Limb):
             ctrl_name.descriptor = ctrl_name.descriptor + "IkGimbal"
             ctrl_name.category = "Ctrl"
             self.end_ik_gimbal = Control( name=str(ctrl_name), 
-                                        color=shape_pylib.getColorBySide(self.endJoint), 
+                                        color=controlshape_pylib.getColorBySide(self.endJoint), 
                                         size=5, 
                                         shapeType="sphere", 
                                         lockAndHide=["s","v"], 
@@ -1093,7 +1093,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.category = "Ctrl"
         
         self.pivot_ik = Control( name=str(ctrl_name), 
-                                color=shape_pylib.getColorBySide(self.midJoint),
+                                color=controlshape_pylib.getColorBySide(self.midJoint),
                                 size=1, 
                                 shapeType="turtle", 
                                 lockAndHide=["r","s","v"], 
@@ -1135,7 +1135,7 @@ class TwoSegmentLimb(Limb):
             up_vector_name.category = "Ctrl"
             
             self.upVector_twist = Control( name=str(up_vector_name), 
-                                           color=shape_pylib.getColorBySide(self.lowerTwistJnt), 
+                                           color=controlshape_pylib.getColorBySide(self.lowerTwistJnt), 
                                            size=1, 
                                            shapeType="turtle", 
                                            lockAndHide=["r","s"], 
@@ -1372,7 +1372,7 @@ class TwoSegmentLimb(Limb):
             control_name.category = "Ctrl"
 
             self.middle_bender_control = Control( name=control_name, 
-                                                  color=shape_pylib.getRgbBySide(self.startJoint, alternate=True), 
+                                                  color=controlshape_pylib.getRgbBySide(self.startJoint, alternate=True), 
                                                   size=8, 
                                                   shapeType="shell", 
                                                   lockAndHide=["s"], 
@@ -1627,7 +1627,7 @@ class TwoSegmentLimb(Limb):
         ctrl_name.category = "Ctrl"
         
         self.hinge = Control( name=str(ctrl_name), 
-                              color=shape_pylib.getColorBySide(self.startJoint), 
+                              color=controlshape_pylib.getColorBySide(self.startJoint), 
                               size=5, 
                               shapeType="circle", 
                               lockAndHide=["r","s"], 

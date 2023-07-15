@@ -5,7 +5,7 @@ from rigpie.pylib.component import Component
 from rigpie.pylib.control import Control
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.joint as joint_pylib
 import rigpie.pylib.coordspace as coordspace_pylib
 import rigpie.pylib.xform as xform_pylib
@@ -88,7 +88,7 @@ class Piston(Component):
             self.control = Control( name=str(control_name),
                                     size=1,
                                     shapeRotation=[0,0,0], 
-                                    color=shape_pylib.getColorBySide(self.name),
+                                    color=controlshape_pylib.getColorBySide(self.name),
                                     shapeType="cube", 
                                     depth=2,
                                     lockAndHide=["v"],

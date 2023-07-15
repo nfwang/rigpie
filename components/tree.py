@@ -5,9 +5,8 @@ from rigpie.pylib.component import Component
 from rigpie.pylib.control import Control
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.shape as shape_pylib
 import rigpie.pylib.attribute as attribute
-import rigpie.pylib.shape as shape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 
 class Tree(Component):
     ''' Component built off of a hierarchy of joints '''
@@ -38,7 +37,7 @@ class Tree(Component):
         jnts = []
         
         if not self.ctrlColor:
-            self.ctrlColor = shape_pylib.getColorBySide(self.name)
+            self.ctrlColor = controlshape_pylib.getColorBySide(self.name)
         
         if self.jointList:
             for jnt in self.jointList:
@@ -72,7 +71,7 @@ class Tree(Component):
             control_name.category = "Ctrl"
             
             ctrl = Control( name=control_name, 
-                            color=shape_pylib.getColorBySide(jnt),
+                            color=controlshape_pylib.getColorBySide(jnt),
                             size=self.size, 
                             shapeType=self.shapeType,
                             lockAndHide=self.lockAndHide, 

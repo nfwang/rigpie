@@ -15,11 +15,10 @@ from rigpie.pylib.control import Control
 from rigpie.pylib.rmath import Transform
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.shape as shape_pylib
 import rigpie.pylib.constraints as constraints_pylib
 import rigpie.pylib.coordspace as coordspace_pylib
 import rigpie.pylib.attribute as attribute_pylib
-import rigpie.pylib.rig as rig_pylib
+
 import rigpie.pylib.xform as xform_pylib
 import rigpie.pylib.hik as hik_pylib
 import rigpie.pylib.mayatransform as mayatransform_pylib
