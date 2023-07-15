@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<HIKRetargeter dest="BipedHIK">
+    <MappedRetargeter body="Hips" className="DefaultRetargeter" destRig="CnRootCtrl" destSkel="CnHipJnt" id="1" matrixSource="HipsGX" name="CustomRigDefaultMappingNode1" type="R"/>
+    <MappedRetargeter body="Hips" className="DefaultRetargeter" destRig="CnRootCtrl" destSkel="CnHipJnt" id="1" matrixSource="HipsGX" name="CustomRigDefaultMappingNode2" type="T"/>
+    <MappedRetargeter body="LeftShoulder" className="DefaultRetargeter" destRig="LfClavicleCtrl" destSkel="LfClavicleJnt" id="18" matrixSource="LeftShoulderGX" name="CustomRigDefaultMappingNode3" type="R"/>
+    <MappedRetargeter body="LeftHandThumb1" className="DefaultRetargeter" destRig="LfThumb1Ctrl" destSkel="LfThumb1Jnt" id="50" matrixSource="LeftHandThumb1GX" name="CustomRigDefaultMappingNode7" type="R"/>
+    <MappedRetargeter body="RightShoulder" className="DefaultRetargeter" destRig="RtClavicleCtrl" destSkel="RtClavicleJnt" id="19" matrixSource="RightShoulderGX" name="CustomRigDefaultMappingNode8" type="R"/>
+    <MappedRetargeter body="RightHand" className="DefaultRetargeter" destRig="RtWristFkCtrl" destSkel="RtWristJnt" id="14" matrixSource="RightHandGX" name="CustomRigDefaultMappingNode9" type="R"/>
+    <MappedRetargeter body="RightHandThumb1" className="DefaultRetargeter" destRig="RtThumb1Ctrl" destSkel="RtThumb1Jnt" id="74" matrixSource="RightHandThumb1GX" name="CustomRigDefaultMappingNode10" type="R"/>
+    <MappedRetargeter body="RightHandIndex1" className="DefaultRetargeter" destRig="RtIndex1Ctrl" destSkel="RtIndex1Jnt" id="78" matrixSource="RightHandIndex1GX" name="CustomRigDefaultMappingNode11" type="R"/>
+    <MappedRetargeter body="RightHandMiddle1" className="DefaultRetargeter" destRig="RtMiddle1Ctrl" destSkel="RtMiddle1Jnt" id="82" matrixSource="RightHandMiddle1GX" name="CustomRigDefaultMappingNode12" type="R"/>
+    <MappedRetargeter body="RightHandRing1" className="DefaultRetargeter" destRig="RtRing1Ctrl" destSkel="RtRing1Jnt" id="86" matrixSource="RightHandRing1GX" name="CustomRigDefaultMappingNode13" type="R"/>
+    <MappedRetargeter body="RightHandPinky1" className="DefaultRetargeter" destRig="RtPinky1Ctrl" destSkel="RtPinky1Jnt" id="90" matrixSource="RightHandPinky1GX" name="CustomRigDefaultMappingNode14" type="R"/>
+    <MappedRetargeter body="LeftHandIndex1" className="DefaultRetargeter" destRig="LfIndex1Ctrl" destSkel="LfIndex1Jnt" id="54" matrixSource="LeftHandIndex1GX" name="CustomRigDefaultMappingNode15" type="R"/>
+    <MappedRetargeter body="LeftHandMiddle1" className="DefaultRetargeter" destRig="LfMiddle1Ctrl" destSkel="LfMiddle1Jnt" id="58" matrixSource="LeftHandMiddle1GX" name="CustomRigDefaultMappingNode16" type="R"/>
+    <MappedRetargeter body="LeftHandRing1" className="DefaultRetargeter" destRig="LfRing1Ctrl" destSkel="LfRing1Jnt" id="62" matrixSource="LeftHandRing1GX" name="CustomRigDefaultMappingNode17" type="R"/>
+    <MappedRetargeter body="LeftHandPinky1" className="DefaultRetargeter" destRig="LfPinky1Ctrl" destSkel="LfPinky1Jnt" id="66" matrixSource="LeftHandPinky1GX" name="CustomRigDefaultMappingNode18" type="R"/>
+    <MappedRetargeter body="Neck" className="DefaultRetargeter" destRig="CnNeckBotCtrl" destSkel="CnNeck1Jnt" id="20" matrixSource="NeckGX" name="CustomRigDefaultMappingNode19" offsetX="-1.035040020942688" offsetY="0.014872819185256958" offsetZ="0.01520650926977396" type="R"/>
+    <MappedRetargeter body="Neck1" className="DefaultRetargeter" destRig="CnNeckMidCtrl" destSkel="CnNeck2Jnt" id="32" matrixSource="Neck1GX" name="CustomRigDefaultMappingNode20" offsetX="3.5323235988616943" offsetY="0.10749278962612152" offsetZ="0.09777478873729706" type="R"/>
+    <MappedRetargeter body="Head" className="DefaultRetargeter" destRig="CnHeadCtrl" destSkel="CnHeadJnt" id="15" matrixSource="HeadGX" name="CustomRigDefaultMappingNode21" type="R"/>
+    <MappedRetargeter body="LeftFoot" className="DefaultRetargeter" destRig="LfAnkleFkCtrl" destSkel="LfAnkleJnt" id="4" matrixSource="LeftFootGX" name="CustomRigDefaultMappingNode22" type="R"/>
+    <MappedRetargeter body="LeftToeBase" className="DefaultRetargeter" destRig="LfBallFkCtrl" destSkel="LfBallJnt" id="16" matrixSource="LeftToeBaseGX" name="CustomRigDefaultMappingNode23" type="R"/>
+    <MappedRetargeter body="RightFoot" className="DefaultRetargeter" destRig="RtAnkleFkCtrl" destSkel="RtAnkleJnt" id="7" matrixSource="RightFootGX" name="CustomRigDefaultMappingNode24" type="R"/>
+    <MappedRetargeter body="RightToeBase" className="DefaultRetargeter" destRig="RtBallFkCtrl" destSkel="RtBallJnt" id="17" matrixSource="RightToeBaseGX" name="CustomRigDefaultMappingNode25" type="R"/>
+    <MappedRetargeter body="Spine" className="DefaultRetargeter" destRig="CnSpineBotCtrl" destSkel="CnSpine2Jnt" id="8" matrixSource="SpineGX" name="CustomRigDefaultMappingNode26" offsetX="-2.920206308364868" type="R"/>
+    <MappedRetargeter body="LeftHandThumb2" className="DefaultRetargeter" destRig="LfThumb2Ctrl" destSkel="LfThumb2Jnt" id="51" matrixSource="LeftHandThumb2GX" name="CustomRigDefaultMappingNode30" type="R"/>
+    <MappedRetargeter body="LeftHandThumb3" className="DefaultRetargeter" destRig="LfThumb3Ctrl" destSkel="LfThumb3Jnt" id="52" matrixSource="LeftHandThumb3GX" name="CustomRigDefaultMappingNode31" type="R"/>
+    <MappedRetargeter body="LeftHandIndex2" className="DefaultRetargeter" destRig="LfIndex2Ctrl" destSkel="LfIndex2Jnt" id="55" matrixSource="LeftHandIndex2GX" name="CustomRigDefaultMappingNode32" type="R"/>
+    <MappedRetargeter body="LeftHandIndex3" className="DefaultRetargeter" destRig="LfIndex3Ctrl" destSkel="LfIndex3Jnt" id="56" matrixSource="LeftHandIndex3GX" name="CustomRigDefaultMappingNode33" type="R"/>
+    <MappedRetargeter body="LeftHandMiddle2" className="DefaultRetargeter" destRig="LfMiddle2Ctrl" destSkel="LfMiddle2Jnt" id="59" matrixSource="LeftHandMiddle2GX" name="CustomRigDefaultMappingNode34" type="R"/>
+    <MappedRetargeter body="LeftHandMiddle3" className="DefaultRetargeter" destRig="LfMiddle3Ctrl" destSkel="LfMiddle3Jnt" id="60" matrixSource="LeftHandMiddle3GX" name="CustomRigDefaultMappingNode35" type="R"/>
+    <MappedRetargeter body="LeftHandRing2" className="DefaultRetargeter" destRig="LfRing2Ctrl" destSkel="LfRing2Jnt" id="63" matrixSource="LeftHandRing2GX" name="CustomRigDefaultMappingNode36" type="R"/>
+    <MappedRetargeter body="LeftHandRing3" className="DefaultRetargeter" destRig="LfRing3Ctrl" destSkel="LfRing3Jnt" id="64" matrixSource="LeftHandRing3GX" name="CustomRigDefaultMappingNode37" type="R"/>
+    <MappedRetargeter body="LeftHandPinky2" className="DefaultRetargeter" destRig="LfPinky2Ctrl" destSkel="LfPinky2Jnt" id="67" matrixSource="LeftHandPinky2GX" name="CustomRigDefaultMappingNode38" type="R"/>
+    <MappedRetargeter body="LeftHandPinky3" className="DefaultRetargeter" destRig="LfPinky3Ctrl" destSkel="LfPinky3Jnt" id="68" matrixSource="LeftHandPinky3GX" name="CustomRigDefaultMappingNode39" type="R"/>
+    <MappedRetargeter body="RightHandThumb2" className="DefaultRetargeter" destRig="RtThumb2Ctrl" destSkel="RtThumb2Jnt" id="75" matrixSource="RightHandThumb2GX" name="CustomRigDefaultMappingNode40" type="R"/>
+    <MappedRetargeter body="RightHandThumb3" className="DefaultRetargeter" destRig="RtThumb3Ctrl" destSkel="RtThumb3Jnt" id="76" matrixSource="RightHandThumb3GX" name="CustomRigDefaultMappingNode41" type="R"/>
+    <MappedRetargeter body="RightHandIndex2" className="DefaultRetargeter" destRig="RtIndex2Ctrl" destSkel="RtIndex2Jnt" id="79" matrixSource="RightHandIndex2GX" name="CustomRigDefaultMappingNode42" type="R"/>
+    <MappedRetargeter body="RightHandIndex3" className="DefaultRetargeter" destRig="RtIndex3Ctrl" destSkel="RtIndex3Jnt" id="80" matrixSource="RightHandIndex3GX" name="CustomRigDefaultMappingNode43" type="R"/>
+    <MappedRetargeter body="RightHandMiddle2" className="DefaultRetargeter" destRig="RtMiddle2Ctrl" destSkel="RtMiddle2Jnt" id="83" matrixSource="RightHandMiddle2GX" name="CustomRigDefaultMappingNode44" type="R"/>
+    <MappedRetargeter body="RightHandMiddle3" className="DefaultRetargeter" destRig="RtMiddle3Ctrl" destSkel="RtMiddle3Jnt" id="84" matrixSource="RightHandMiddle3GX" name="CustomRigDefaultMappingNode45" type="R"/>
+    <MappedRetargeter body="RightHandRing2" className="DefaultRetargeter" destRig="RtRing2Ctrl" destSkel="RtRing2Jnt" id="87" matrixSource="RightHandRing2GX" name="CustomRigDefaultMappingNode46" type="R"/>
+    <MappedRetargeter body="RightHandRing3" className="DefaultRetargeter" destRig="RtRing3Ctrl" destSkel="RtRing3Jnt" id="88" matrixSource="RightHandRing3GX" name="CustomRigDefaultMappingNode47" type="R"/>
+    <MappedRetargeter body="RightHandPinky2" className="DefaultRetargeter" destRig="RtPinky2Ctrl" destSkel="RtPinky2Jnt" id="91" matrixSource="RightHandPinky2GX" name="CustomRigDefaultMappingNode48" type="R"/>
+    <MappedRetargeter body="RightHandPinky3" className="DefaultRetargeter" destRig="RtPinky3Ctrl" destSkel="RtPinky3Jnt" id="92" matrixSource="RightHandPinky3GX" name="CustomRigDefaultMappingNode49" type="R"/>
+    <MappedRetargeter body="RightUpLeg" className="DefaultRetargeter" destRig="RtThighFkCtrl" destSkel="RtThighJnt" id="5" matrixSource="RightUpLegGX" name="CustomRigDefaultMappingNode50"  type="R"/>
+    <MappedRetargeter body="RightLeg" className="DefaultRetargeter" destRig="RtKneeFkCtrl" destSkel="RtKneeJnt" id="6" matrixSource="RightLegGX" name="CustomRigDefaultMappingNode51" type="R"/>
+    <MappedRetargeter body="LeftUpLeg" className="DefaultRetargeter" destRig="LfThighFkCtrl" destSkel="LfThighJnt" id="2" matrixSource="LeftUpLegGX" name="CustomRigDefaultMappingNode52" type="R"/>
+    <MappedRetargeter body="LeftLeg" className="DefaultRetargeter" destRig="LfKneeFkCtrl" destSkel="LfKneeJnt" id="3" matrixSource="LeftLegGX" name="CustomRigDefaultMappingNode53" type="R"/>
+    <MappedRetargeter body="RightArm" className="DefaultRetargeter" destRig="RtShoulderFkCtrl" destSkel="RtShoulderJnt" id="12" matrixSource="RightArmGX" name="CustomRigDefaultMappingNode54"  type="R"/>
+    <MappedRetargeter body="RightForeArm" className="DefaultRetargeter" destRig="RtElbowFkCtrl" destSkel="RtElbowJnt" id="13" matrixSource="RightForeArmGX" name="CustomRigDefaultMappingNode55" type="R"/>
+    <MappedRetargeter body="LeftArm" className="DefaultRetargeter" destRig="LfShoulderFkCtrl" destSkel="LfShoulderJnt" id="9" matrixSource="LeftArmGX" name="CustomRigDefaultMappingNode56" type="R"/>
+    <MappedRetargeter body="LeftForeArm" className="DefaultRetargeter" destRig="LfElbowFkCtrl" destSkel="LfElbowJnt" id="10" matrixSource="LeftForeArmGX" name="CustomRigDefaultMappingNode57" type="R"/>
+    <MappedRetargeter body="LeftHand" className="DefaultRetargeter" destRig="LfWristFkCtrl" destSkel="LfWristJnt" id="11" matrixSource="LeftHandGX" name="CustomRigDefaultMappingNode58" type="R"/>
+	<MappedRetargeter body="Spine2" className="DefaultRetargeter" destRig="CnSpineTopCtrl" destSkel="CnSpine4Jnt" id="1000" matrixSource="Spine2GX" name="CustomRigDefaultMappingNode4" type="R"/>
+	<MappedRetargeter body="Spine2" className="DefaultRetargeter" destRig="CnSpineTopCtrl" destSkel="CnSpine4Jnt" id="1000" matrixSource="Spine2GX" name="CustomRigDefaultMappingNode5" offsetX="5.491976976814382e-14" offsetY="6.451680660247803" offsetZ="-0.1323043406009674" type="T"/>
+</HIKRetargeter>
