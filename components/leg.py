@@ -7,7 +7,7 @@ from rigpie.pylib.control import Control
 
 import rigpie.pylib.rig as rig
 import rigpie.pylib.attribute as attribute
-import rigpie.pylib.controlshape as controlcontrolshape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.constraints as constraints
 
 class Leg(TwoSegmentLimb):

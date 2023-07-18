@@ -6,7 +6,6 @@ from rigpie.pylib.mayaname import MayaName
 from rigpie.pylib.rmath import Vector
 
 import rigpie.pylib.constraints as constraints_pylib
-import rigpie.pylib.shape as shape_pylib
 import rigpie.pylib.xform as xform_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.mayatransform as mayatransform_pylib

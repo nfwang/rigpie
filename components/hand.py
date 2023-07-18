@@ -6,7 +6,7 @@ from rigpie.pylib.component import Component
 from rigpie.pylib.control import Control
 from rigpie.pylib.mayaname import MayaName
 
-import rigpie.pylib.controlshape_pylib as controlshape_pylib
+import rigpie.pylib.controlshape as controlshape_pylib
 import rigpie.pylib.attribute as attribute_pylib
 import rigpie.pylib.rig as rig_pylib
 import rigpie.pylib.rmath as rmath_pylib
